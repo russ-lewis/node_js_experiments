@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <title>WebSocket Example</title>
-    <script src="client.js"></script>
   </head>
   <body>
+    <script src="client.js"></script>
+
     <h1>WebSocket Example</h1>
     <p>Open your browser's developer tools to see client/server activity.</p>
+
+    <p><input type=text name="message_to_send">
+       <button onclick="send_msg_to_websocket(document.getElementsByName('message_to_send')[0].value)">Send</button>
+
   </body>
 </html>

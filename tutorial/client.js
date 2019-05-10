@@ -17,3 +17,10 @@ ws.onmessage = (msg) => {
     console.log("received: "+msg.data);
 };
 
+
+
+function send_msg_to_websocket(msg)
+{
+    ws.send(msg);
+}
+
