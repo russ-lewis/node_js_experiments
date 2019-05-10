@@ -1,0 +1,18 @@
+See: https://github.com/nodejs/help/wiki/Installation
+
+
+
+sudo mkdir /usr/local/lib/nodejs
+sudo tar -xvf node-???.tar.xz -C /usr/local/lib/nodejs
+
+    # SKIP THIS STEP IF YOU PREFER THE SYMLINKS BELOW
+    #
+    # sudo vi /etc/bashrc
+    #    Add at end:
+    #    -----------
+    #    export PATH=$PATH:/usr/local/lib/nodejs/node-???/bin
+
+sudo ln -s /usr/local/lib/nodejs/node-???/bin/node /usr/bin/
+sudo ln -s /usr/local/lib/nodejs/node-???/bin/npm  /usr/bin/
+sudo ln -s /usr/local/lib/nodejs/node-???/bin/npx  /usr/bin/
+
