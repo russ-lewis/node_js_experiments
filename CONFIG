@@ -16,3 +16,8 @@ sudo ln -s /usr/local/lib/nodejs/node-???/bin/node /usr/bin/
 sudo ln -s /usr/local/lib/nodejs/node-???/bin/npm  /usr/bin/
 sudo ln -s /usr/local/lib/nodejs/node-???/bin/npx  /usr/bin/
 
+
+
+# in the directory where you're going to run the code...
+npm install ws
+
