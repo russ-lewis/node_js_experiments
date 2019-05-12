@@ -1,6 +1,6 @@
 console.log("Hello world")
 
-const ws = new WebSocket("ws://elastic.ec2.private/");
+const ws = new WebSocket("ws://52.89.101.165/")
 
 
 ws.onopen = () => {
@@ -10,7 +10,7 @@ ws.onopen = () => {
 };
 
 ws.onerror = (err) => {
-    console.log("WebSocket error: "+error);
+    console.log("WebSocket error: "+err.data);
 };
 
 ws.onmessage = (msg) => {

@@ -1,6 +1,10 @@
 
 const websockets_server = require("ws");
 
+// this fails, I think because of lack of certificates?
+// server = new websockets_server.Server({ port: 443, ssl: true });
+
+// fallback to unencrypted sockets
 server = new websockets_server.Server({ port: 80 });
 
 
