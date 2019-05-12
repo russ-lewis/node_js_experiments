@@ -13,6 +13,10 @@ ws.onerror = (err) => {
     console.log("WebSocket error: "+err.data);
 };
 
+ws.onclose = () => {
+    console.log("WebSocket closed.");
+};
+
 ws.onmessage = (msg) => {
     console.log("received: "+msg.data);
 };
